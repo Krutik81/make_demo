@@ -10,6 +10,11 @@ app.get('/', (req, res) => {
   res.send('Hi, this is working!');
 });
 
+app.get('/demo', (req, res) => {
+  res.send('Hi, this is working!');
+});
+
+
 // Start the server using the port from the .env file
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
